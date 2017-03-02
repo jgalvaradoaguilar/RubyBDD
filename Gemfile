@@ -1,0 +1,11 @@
+source "https://rubygems.org"
+
+gem "selenium-webdriver"
+gem "cucumber"
+gem "gherkin"
+gem "capybara"
+gem "rspec"
+gem "watir"
+gem "colorize"
+gem "rspec-retry"
+gem "page-object"
