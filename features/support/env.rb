@@ -2,6 +2,7 @@ require 'capybara/cucumber'
 require 'selenium-webdriver'
 require 'page-object'
 require 'page-object/page_factory'
+require 'rspec/retry'
 
 $TIMEOUT = 15
 PageObject.default_page_wait = $TIMEOUT
@@ -17,16 +18,13 @@ Before do
   @browser.manage.window.maximize
   
   # Retry to open URL if it fails
-  attempts = 0
-  begin
-    visit MainPage
-  rescue Net::ReadTimeout
-    if attempts == 0
-      attempts += 1
-      retry
-    else
-      raise
-    end
+  RSpec.configure do |config|
+    # show retry status in spec process
+    config.verbose_retry = true
+    # Try twice (retry once)
+    config.default_retry_count = 2
+    # Only retry when Selenium raises Net::ReadTimeout
+    config.exceptions_to_retry = [Net::ReadTimeout]
   end
   
 end
