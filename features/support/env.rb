@@ -16,7 +16,7 @@ Before do
   @browser.manage.timeouts.page_load = 120
   @browser.manage.window.maximize
   
-  # Open URL and the test is retrayed once if it fails
+  # Retry to open URL if it fails
   attempts = 0
   begin
     visit MainPage
