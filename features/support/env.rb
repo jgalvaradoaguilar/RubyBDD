@@ -4,7 +4,7 @@ require 'page-object'
 require 'page-object/page_factory'
 require 'rspec/retry'
 
-$TIMEOUT = 15
+$TIMEOUT = 120
 PageObject.default_page_wait = $TIMEOUT
 PageObject.default_element_wait = $TIMEOUT
 
