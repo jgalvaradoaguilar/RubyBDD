@@ -13,7 +13,7 @@ Before do
   # Set the browser (only Firefox in this example)
   @browser = Selenium::WebDriver.for :firefox
   @browser.manage.timeouts.implicit_wait = $TIMEOUT
-  @browser.manage.timeouts.page_load = 120
+  #@browser.manage.timeouts.page_load = 120
   @browser.manage.window.maximize  
 end
 
