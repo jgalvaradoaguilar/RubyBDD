@@ -14,4 +14,5 @@ end
 
 Then(/^user should see any information$/) do
   sleep 10
+  #Test commit
 end
