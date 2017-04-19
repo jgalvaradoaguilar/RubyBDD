@@ -8,8 +8,6 @@ Feature: Search on Youtube
     When user makes a search with the content "<scientist>"
       And user clicks on Search button
     Then user should see any information
-    #test commit
-    #test commit 2
 
     Examples:
       | scientist |
