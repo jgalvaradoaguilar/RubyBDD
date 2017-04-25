@@ -13,6 +13,8 @@ When(/^user clicks on Search button$/) do
 end
 
 Then(/^user should see any information$/) do
-  sleep 10
+  sleep 2
   #Test commit
+  sleep 1
+  #This is only a commit test for my board
 end
