@@ -17,4 +17,6 @@ Then(/^user should see any information$/) do
   #Test commit
   sleep 1
   #This is only a commit test for my board
+  sleep 2
+  #Another commit test for my board
 end
