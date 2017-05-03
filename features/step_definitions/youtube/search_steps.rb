@@ -14,9 +14,6 @@ end
 
 Then(/^user should see any information$/) do
   sleep 2
-  #Test commit
-  sleep 1
-  #This is only a commit test for my board
-  sleep 2
-  #Another commit test for my board
+  #Test commit 03 may 2017
+  sleep 3
 end
